@@ -226,7 +226,7 @@ function borrarRegistroCliente (doc){
 
 function getInformationMensajes(){
     const xhttp = new XMLHttpRequest();
-    xhttp.open('GET', 'http://152.67.44.118/api/Message/all');
+    xhttp.open('GET', 'http://152.67.44.118:8080/api/Message/all');
     xhttp.send();
     
     xhttp.onreadystatechange = function(){
