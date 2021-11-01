@@ -1,6 +1,6 @@
 function getInformation(){
     const xhttp = new XMLHttpRequest();
-    xhttp.open('GET', 'http://localhost/api/Motorbike/all');
+    xhttp.open('GET', 'http://152.67.44.118/api/Motorbike/all');
     /*xhttp.open('GET', 'http://140.238.145.160/api/Motorbike/all');*/
     xhttp.send();
 
@@ -42,7 +42,7 @@ function saveInformation(){
 
     let datosJson = JSON.stringify(datosMotos);
     $.ajax({
-        url : 'http://localhost/api/Motorbike/save',
+        url : 'http://152.67.44.118/api/Motorbike/save',
         data: datosJson,
         type : 'POST',
         dataType : 'JSON',
@@ -66,7 +66,7 @@ function updateMoto (idMoto){
     };
     let dataToSend=JSON.stringify(infoMoto);
 	$.ajax({    
-        url : 'http://localhost/api/Motorbike/update',
+        url : 'http://152.67.44.118/api/Motorbike/update',
         type : 'PUT',
         data : dataToSend,
         dataType : 'JSON',
@@ -91,7 +91,7 @@ function borrarRegistroMoto (idMoto){
     };
     let datosJson = JSON.stringify(datosMotos);
     $.ajax({
-        url: "http://localhost/api/Motorbike/"+idMoto,
+        url: "http://152.67.44.118/api/Motorbike/"+idMoto,
         data: datosJson,
         type : 'DELETE',
         dataType : 'JSON',
@@ -110,7 +110,7 @@ function borrarRegistroMoto (idMoto){
 
 function getInformationClientes(){
     const xhttp = new XMLHttpRequest();
-    xhttp.open('GET', 'http://localhost/api/Client/all');
+    xhttp.open('GET', 'http://152.67.44.118/api/Client/all');
     xhttp.send();
     
     xhttp.onreadystatechange = function(){
@@ -146,7 +146,7 @@ function saveInformationClientes(){
     };
     let datosJson = JSON.stringify(datosCli);
     $.ajax(
-        'http://localhost/api/Client/save',
+        'http://152.67.44.118/api/Client/save',
         {data: datosJson,
             type : 'POST',
             dataType : 'json',
@@ -175,7 +175,7 @@ function updateCliente (doc){
     }
     let dataToSend=JSON.stringify(infoCli);
 	$.ajax({    
-        url : 'http://localhost/api/Client/update',
+        url : 'http://152.67.44.118/api/Client/update',
         data : dataToSend,
         type : 'PUT',
         dataType : 'JSON',
@@ -205,7 +205,7 @@ function borrarRegistroCliente (doc){
     };
     let datosJson = JSON.stringify(datosCli);
     $.ajax({
-        url: "http://localhost/api/Client/"+doc,
+        url: "http://152.67.44.118/api/Client/"+doc,
         data: datosJson,
         type : 'DELETE',
         dataType : 'json',
@@ -226,7 +226,7 @@ function borrarRegistroCliente (doc){
 
 function getInformationMensajes(){
     const xhttp = new XMLHttpRequest();
-    xhttp.open('GET', 'http://localhost/api/Message/all');
+    xhttp.open('GET', 'http://152.67.44.118/api/Message/all');
     xhttp.send();
     
     xhttp.onreadystatechange = function(){
@@ -257,7 +257,7 @@ function saveInformationMensajes(){
     };
     let datosJson = JSON.stringify(datosMen);
     $.ajax(
-        'http://localhost/api/Message/save',
+        'http://152.67.44.118/api/Message/save',
         {data: datosJson,
             type : 'POST',
             dataType : 'json',
@@ -281,7 +281,7 @@ function updateMensaje (id){
     };
     let dataToSend=JSON.stringify(infoMen);
 	$.ajax({    
-        url : 'http://localhost/api/Message/update',
+        url : 'http://152.67.44.118/api/Message/update',
         data : dataToSend,
         type : 'PUT',
         dataType : 'json',
@@ -308,7 +308,7 @@ function updateCategory (idCategory){
     };
     let dataToSend=JSON.stringify(infoCat);
 	$.ajax({    
-        url : 'http://localhost/api/Category/update',
+        url : 'http://152.67.44.118/api/Category/update',
         type : 'PUT',
         data : dataToSend,
         dataType : 'JSON',
@@ -330,7 +330,7 @@ function borrarRegistroMensaje (id){
     };
     let datosJson = JSON.stringify(datosMen);
     $.ajax({
-        url: "http://localhost/api/Message/"+id,
+        url: "http://152.67.44.118/api/Message/"+id,
         data: datosJson,
         type : 'DELETE',
         dataType : 'JSON',
@@ -350,7 +350,7 @@ function borrarRegistroMensaje (id){
 
 function getInformationCategorias(){
     const xhttp = new XMLHttpRequest();
-    xhttp.open('GET', 'http://localhost/api/Category/all');
+    xhttp.open('GET', 'http://152.67.44.118/api/Category/all');
     xhttp.send();
     
     xhttp.onreadystatechange = function(){
@@ -380,7 +380,7 @@ function getInformationCategorias(){
 
 function getComboCategories(){
     $.ajax({
-        url : 'http://localhost/api/Category/all',
+        url : 'http://152.67.44.118/api/Category/all',
         type : 'GET',
         dataType : 'json',
         contentType : "application/json; charset=utf-8",
@@ -411,7 +411,7 @@ function saveInformationCategory(){
     };
     let datosJson = JSON.stringify(datosCat);
     $.ajax(
-        'http://localhost/api/Category/save',
+        'http://152.67.44.118/api/Category/save',
         {data: datosJson,
             type : 'POST',
             dataType : 'json',
@@ -437,7 +437,7 @@ function updateCategory (idCategory){
     };
     let dataToSend=JSON.stringify(infoCat);
 	$.ajax({    
-        url : 'http://localhost/api/Category/update',
+        url : 'http://152.67.44.118/api/Category/update',
         type : 'PUT',
         data : dataToSend,
         dataType : 'JSON',
@@ -459,7 +459,7 @@ function borrarRegistroCategoria (id){
     };
     let datosJson = JSON.stringify(datosCat);
     $.ajax({
-        url: "http://localhost/api/Category/"+id,
+        url: "http://152.67.44.118/api/Category/"+id,
         data: datosJson,
         type : 'DELETE',
         dataType : 'JSON',
@@ -475,7 +475,7 @@ function borrarRegistroCategoria (id){
 
 function cargueCategoria(){
     $.ajax({
-        url : 'http://localhost/api/Category/all',
+        url : 'http://152.67.44.118/api/Category/all',
         type : 'GET',
         dataType : 'json',
         contentType : "application/json; charset=utf-8",
