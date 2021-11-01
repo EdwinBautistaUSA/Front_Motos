@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="application/json" >
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <title>Reto 2 - Ejercicio MOTOS</title>
+    </head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/funcionesReto2.js"></script>
+    <script src="css/style.css"></script>
+
+    <header>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="" class="brand-logo">Concesionario Motos</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Index</a></li>
+            <li><a href="Motos.html">Motos</a></li>
+            <li><a href="Clientes.html">Clientes</a></li>
+            <li><a href="Mensajes.html">Mensajes</a></li>
+            <li><a href="Category.html">Category</a></li>
+          </ul>
+        </div>   
+      </nav> 
+    </header>
+</body>
+
+<main>
+    <div class="row">
+        <div class="row col s12 m4 13">  
+          <form class="col s12">   
+              <div class="row">
+                  
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix">account_circle</i>
+                      <input disabled value ="" id="id" type="number" placeholder="Id">
+                    </div>
+  
+                      <div class="input-field col s12">
+                          <i class="material-icons prefix">description</i>
+                        <input placeholder="Mensaje..." type="text" id="messageText">
+                      </div>
+              </div>
+          </form>
+          
+              </div>
+          
+  
+          <div class="row">
+              <div class="col s12 m8 19">
+                  <div class="container">
+                      <div class="section">
+                          
+                          <table>
+                              <thead>
+                                  <tr>
+                                      <th>Id</th>
+                                      <th>Mensaje</th>
+                                  </tr>
+                              </thead>
+                              <tbody id="res">
+                                  
+                              </tbody>
+                          </table>
+                          
+                      </div>
+                      
+                      <button class="btn" onclick="saveInformationMensajes()" id="open"> <i class="material-icons right">motorcycle</i>Guardar</button>
+          
+                      <button class="btn" onclick="actualizarInformation()"> <i class="material-icons right">file_upload</i>Actualizar</button>
+                      <button class="btn" onclick="getInformationMensajes()"> <i class="material-icons right">find_in_page </i> Consultar</button>
+                  </div>
+              </div>
+              
+          </div>
+          
+          </div>
+</main>
+
+<footer class="page-footer">
+  
+    <div class="footer-copyright">
+      <div class="container">
+        © 2021 Copyright Reservados Grupo 11 - MINTIC
+      
+      </div>
+    </div>
+  </footer> 
+</html>

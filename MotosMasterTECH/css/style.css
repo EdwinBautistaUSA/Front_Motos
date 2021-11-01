@@ -1,0 +1,107 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+
+}
+
+html{
+    font-size: 52.5%;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+    flex: 1 0 auto;
+  }
+
+
+h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+ul{
+   
+    font-size: 2.5rem;
+}
+
+.contenedor{
+    width: 120rem;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+
+}
+
+
+.nave-principal{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.nave-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 1rem;
+}
+.nave-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.hero{
+    height: 450px;   
+    position: absolute;
+    padding: 20px;
+    top: 180px;
+    right: 100px;
+    left: 300px;
+}
+
+.contenido-hero{
+    padding: 10px;
+}
+
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.boton :hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.input-text{
+    border: none;
+    padding: 1rem;
+}
+
+.row > div{
+    padding: 30px;
+    background: var(--blanco);
+    border: 1px solid #ffffff5b;
+    line-height: 60px;
+}
